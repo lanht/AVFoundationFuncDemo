@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bbv-nO-9kl" customClass="ThumbnailCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MqP-xb-Fp1">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w01-97-gDb">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="w01-97-gDb" firstAttribute="leading" secondItem="MqP-xb-Fp1" secondAttribute="leading" id="KhW-Mr-asw"/>
+                    <constraint firstAttribute="bottom" secondItem="w01-97-gDb" secondAttribute="bottom" id="a6o-Q8-Lra"/>
+                    <constraint firstItem="w01-97-gDb" firstAttribute="top" secondItem="MqP-xb-Fp1" secondAttribute="top" id="lLZ-wg-2SI"/>
+                    <constraint firstAttribute="trailing" secondItem="w01-97-gDb" secondAttribute="trailing" id="pVM-CC-PFx"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="thumbnailView" destination="w01-97-gDb" id="sfi-Tq-r5L"/>
+            </connections>
+            <point key="canvasLocation" x="-22" y="-59"/>
+        </collectionViewCell>
+    </objects>
+</document>
